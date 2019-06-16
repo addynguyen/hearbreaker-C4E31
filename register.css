@@ -17,6 +17,7 @@ html,body{
     width: 100%;
 }
 #register_form {
+    background-color: rgba(129, 148, 138, 0.274);
     height: 450px;
     width: 40%;
     display: flex;
@@ -43,9 +44,9 @@ html,body{
 }
 
 #avatarRegister{
-    width: 120px;
-    height: 120px;
-    margin-top: -60px;
+    width: 100px;
+    height: 100px;
+    margin-top: -75px;
 }
 
 #register_button{

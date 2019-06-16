@@ -1,6 +1,6 @@
 
 body{
-    background-image: url(http://yesofcorsa.com/wp-content/uploads/2016/12/4k-Winter-Desktop-Wallpaper.jpg);
+    background-image: url('https://photo2.tinhte.vn/data/attachment-files/2010/12/2889555_1920x1080_HD_wallpaper_115_zixpkcom.jpg');
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -18,7 +18,7 @@ html, body{
     height: 100%;
 }
 #login_form{
-    background-color: rgba(4, 80, 36, 0.274);
+    background-color: rgba(129, 148, 138, 0.274);
     height: 300px;
     width: 50%;
     display: flex;
@@ -36,8 +36,8 @@ html, body{
     border-radius: 1rem;
 }
 #avatar{
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     margin-top: -100px; 
 }
 #login-button{
@@ -48,7 +48,7 @@ html, body{
 .submit_and_reset{
     height: 35px;
     width: 5rem;
-    background-color: rgba(27, 180, 7, 0.521);
+    background-color:  rgb(0, 0, 0);
     border:none;
     border-radius: 1rem;
     color: aliceblue;
