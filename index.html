@@ -2,27 +2,86 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
-    <!-- Add icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Heartbreaker</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
 </head>
 <body>
-<div id="header">
-    <div id="menu">
-    <div id="logo"></div>
-    <nav id="nav-menu">
-                <a class="link-page" href="#"><i class=" fa fa-home"></i>Home</a>
-                <a class="link-page" href="#">Diary</a>
-                <a class="link-page" href="#">Logout</a>
-    </nav>
-    </div>
+    <!-- NAVBAR -->
+  <nav id="nav-menu">
+          <a href="#"></a>
+          <ul id="ul-menu">
+              <li>
+                  <a href="#" class="logged-in link-page">Home</a>
+              </li>
+              <li>
+                  <a href="#" class="logged-in link-page">Diary</a>
+              </li>
+              <li>
+                  <a href="#" class="logged-out link-page" id="open-login-form">Login</a>
+              </li>
+              <li>
+                <a href="#" class="logged-out link-page" id="open-signup-form">Signup</a>
+              </li>
+              <li>
+                <a href="#" class="logged-in link-page" id="log-out">Logout</a>
+              </li>
+              
+          </ul>
+  </nav>
+
+<!-- LOGIN MODAL -->
+
+<div id="login-modal">
+    <h2 class="h2-form">LOG IN</h2>
+    <form id="login-form">
+       <input type="email" name="email" placeholder="Email" class="input-login">
+       <input type="password" name="password" placeholder="Password" class="input-login">
+       <button id="btn-login">LOG IN</button>
+       <a href="#" id="link-create-account">create account?</a>
+    </form>
 </div>
-<div id="content">
-    
+
+<!-- SIGNUP MODAL -->
+<div id="signup-modal">
+    <h2 class="h2-form">SIGN UP</h2>
+    <form id="signup-form">
+        <input type="email" name="email" placeholder="email" class="input-signup" required   >
+        <input type="password" name="password" placeholder="password" class="input-signup" required>
+        <input type="password" name="confirm-password" placeholder="confirm password" class="input-signup" required>
+        <button id="btn-signup">SIGN UP</button>
+    </form>
 </div>
-<div id="footer"></div>
+<script src="scripts/index.js"></script>
+<script src="scripts/auth.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBmeg1iWfNckKOyUfMFO3azz5VqJ9s0JBI",
+    authDomain: "heartbreaker-project.firebaseapp.com",
+    databaseURL: "https://heartbreaker-project.firebaseio.com",
+    projectId: "heartbreaker-project",
+    storageBucket: "heartbreaker-project.appspot.com",
+    messagingSenderId: "368097769746",
+    appId: "1:368097769746:web:07d12b2d1ba687e2"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+ //make auth and firestore references
+  const auth=firebase.auth();
+  const db=firebase.firestore();
+
+  // update firestore settings
+  db.settings({timestampsInSnapshots: true});
+</script>
 </body>
 </html>
