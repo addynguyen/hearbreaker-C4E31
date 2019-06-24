@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="logo"></div>
+            <nav id="nav-menu">
+                        <a class="link-page" href="#"><i class=" fa fa-home"></i>Home</a>
+                        <a class="link-page" href="#">Diary</a>
+                        <a class="link-page" href="#">Logout</a>
+            </nav>
+        </div>
+
+        <div class="form">
+            <form id="settingDate">
+                <label id="label-input-date">Ngày Chia Tay:</label>
+                <input name="date" type="datetime-local" id="input-date" required>
+                <button id="btn-setting-dateHearbreaker">Submit</button>
+                <table id="result">
+                    <tr>
+                        <th id="xxx">Bạn đã cô đơn</th>
+                    </tr>
+                    <tr>
+                        <th id="days"></th>
+                    </tr>
+                    <tr>
+                        <th id="hoursMins"></th>
+                    </tr>
+                </table>
+            </form>
+            
+        </div>
+
+    </div>
+
+    </table>
+
+    <!-- <p id ="display"></p> -->
+    <script src="date.js"></script>
+</body>
+</html>
